@@ -1241,15 +1241,15 @@ body {
 }
 
 .bg-banner1 {
-  background-image: url('/images/all-prod/banner-1.jpg');
+  background-image: url('../images/all-prod/banner-1.jpg');
 }
 
 .bg-banner2 {
-  background-image: url('/images/all-prod/banner-2.jpg');
+  background-image: url('../images/all-prod/banner-2.jpg');
 }
 
 .bg-banner3 {
-  background-image: url('/images/all-prod/banner-3.jpg');
+  background-image: url('../images/all-prod/banner-3.jpg');
 }
 
 .bg-cover {

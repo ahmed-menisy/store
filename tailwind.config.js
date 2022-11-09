@@ -16,9 +16,9 @@ module.exports = {
       },
       extend: {
          backgroundImage: {
-            banner1: "url('/images/all-prod/banner-1.jpg')",
-            banner2: "url('/images/all-prod/banner-2.jpg')",
-            banner3: "url('/images/all-prod/banner-3.jpg')",
+            banner1: "url('../images/all-prod/banner-1.jpg')",
+            banner2: "url('../images/all-prod/banner-2.jpg')",
+            banner3: "url('../images/all-prod/banner-3.jpg')",
          },
          fontFamily: {
             popines: "Poppins, sans-serif",
