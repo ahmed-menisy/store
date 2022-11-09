@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   body {
+      @apply font-Roboto;
+   }
+}
+
+@layer components {
+   .btn {
+      @apply px-5 py-2 font-medium rounded   bg-primary text-white uppercase border border-primary hover:bg-transparent hover:text-primary transition-colors duration-500;
+   }
+   .form-input-1 {
+      @apply w-full h-full pl-4 text-gray-500 outline-none placeholder:text-gray-500 dark:text-white dark:bg-transparent;
+   }
+}
+
+@layer utilities {
+   body {
+      @apply font-Roboto dark:bg-secondary;
+   }
+
+   section {
+      @apply py-12;
+   }
+
+   ::-webkit-scrollbar {
+      @apply w-2;
+   }
+   ::-webkit-scrollbar-track {
+      @apply bg-secondary dark:bg-sec-light;
+   }
+   ::-webkit-scrollbar-thumb {
+      @apply bg-gray-400 dark:bg-dark-color rounded-lg;
+   }
+
+   .right .g article {
+      @apply flex-col text-center;
+   }
+
+   .right .g article :is(p, ul) {
+      @apply m-auto;
+   }
+
+   .right .g article .btn-cat {
+      @apply flex-col;
+   }
+}
+
+.owl-nav {
+   @apply absolute top-1/2 -translate-y-1/2 text-gray-800   text-xl md:text-4xl w-full;
+}
+.owl-prev {
+   @apply left-5 absolute hover:text-primary  transition-colors !important;
+}
+.owl-next {
+   @apply right-5 absolute hover:text-primary transition-colors !important;
+}
