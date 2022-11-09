@@ -67,7 +67,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 // grid
-document.getElementById("grid").addEventListener("click", function () {
+document.getElementById("grid")?.addEventListener("click", function () {
    document.querySelectorAll(".right article").forEach((art) => {
       // art.classList.remove("md:flex-row");
       // art.classList.replace("items-center", "items-start");
@@ -77,7 +77,7 @@ document.getElementById("grid").addEventListener("click", function () {
 });
 
 // list
-document.getElementById("list").addEventListener("click", function () {
+document.getElementById("list")?.addEventListener("click", function () {
    // document.querySelectorAll(".right article").forEach((art) => {
    //    art.classList.add("md:flex-row");
    //    art.classList.replace("items-start", "items-center");
