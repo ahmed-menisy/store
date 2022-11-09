@@ -45,6 +45,7 @@
    </head>
    <body class="overflow-x-hidden">
       <!-- ---------- Start Fixed Items ---------- -->
+
       <!-- ---------- Menu  -->
       <aside
          class="block lg:hidden before:content-[''] relative before:z-[99] before:inset-0 before:bg-slate-900/30 before:invisible before:fixed"
@@ -308,7 +309,7 @@
                   </span>
 
                   <span
-                     class="hidden text-center text-gray-800 transition duration-700 cursor-pointer lg:block hover:text-primary dark:text-white dark:hover:text-primary"
+                     class="hidden cart-head text-center text-gray-800 transition duration-700 cursor-pointer lg:block hover:text-primary dark:text-white dark:hover:text-primary"
                   >
                      <i class="relative fa-solid fa-cart-shopping fa-xl">
                         <span
@@ -324,6 +325,10 @@
                   >
                      <i class="fa-solid fa-user fa-xl"></i>
                      <p class="text-xs">Account</p>
+                  </span>
+
+                  <span class="text-secondary dark:text-white hover:text-primary">
+                     <i id="dark" class="fa-solid fa-moon fa-xl cursor-pointer"></i>
                   </span>
                </div>
             </div>
@@ -1429,7 +1434,11 @@
          </div>
       </footer>
       <!-- ---------- End Footer ---------- -->
-
+      <script>
+         dark.addEventListener("click", () => {
+            document.querySelector("html").classList.toggle("dark");
+         });
+      </script>
       <!-- Jquery -->
       <script
          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"

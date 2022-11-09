@@ -40,13 +40,14 @@ $(".wraper-slider2").owlCarousel({
 const sideArea = document.querySelectorAll(".sideArea");
 const aside = document.querySelectorAll("aside");
 const closebtn = document.querySelectorAll(".close");
-const menuIcons = document.querySelectorAll("#navPhone li");
+const menuIcons = Array.from(document.querySelectorAll("#navPhone li"));
 
 // ========== End Global ==========
 
 // ========== Start Events ==========
 
 // Show Aside
+
 for (let i = 0; i < menuIcons.length; i++) {
    menuIcons[i].addEventListener("click", () => {
       showOrHideAside(i);

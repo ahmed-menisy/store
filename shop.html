@@ -336,6 +336,10 @@
                      <i class="fa-solid fa-user fa-xl"></i>
                      <p class="text-xs">Account</p>
                   </span>
+
+                  <span class="text-secondary dark:text-white hover:text-primary">
+                     <i id="dark" class="fa-solid fa-moon fa-xl cursor-pointer"></i>
+                  </span>
                </div>
             </div>
          </div>
@@ -481,7 +485,7 @@
 
       <main class="my-10 items-start grid gap-4 lg:grid-cols-[290px_1fr] container font-popines">
          <!-- Start Left  -->
-         <div class="p-3 shadow-lg left text-secondary dark:text-white dark:shadow-white lg:sticky top-7">
+         <div class="p-3 shadow left text-secondary dark:text-white dark:shadow-white lg:sticky top-7">
             <!-- Categories  -->
             <h3 class="my-2 text-lg font-medium">CATEGORIES</h3>
             <ul class="grid gap-3 mt-3">
@@ -953,7 +957,11 @@
          </div>
       </footer>
       <!-- ---------- End Footer ---------- -->
-
+      <script>
+         dark.addEventListener("click", () => {
+            document.querySelector("html").classList.toggle("dark");
+         });
+      </script>
       <!-- Jquery -->
       <script
          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
